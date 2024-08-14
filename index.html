@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store.tj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="plus">Add Product</button>
+            <div id="filters">
+                <label><input type="button" name="company" value="" checked> All</label>
+                <label><input type="button" name="company" value=""> Ikea</label>
+                <label><input type="button" name="company" value=""> Marcos</label>
+                <label><input type="button" name="company" value=""> Caressa</label>
+                <label><input type="button" name="company" value=""> Liddy</label>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+    <div class="modal infoModal">
+        <div class="modal-content">
+            <span class="close closeInfoModal">×</span>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <div class="modal addModal">
+        <div class="modal-content">
+            <span class="close closeAddModal">×</span>
+            <h2>Add New Product</h2>
+            <form class="addProductForm">
+                <input type="text" class="titleAdd" placeholder="Product Name">
+                <input type="text" class="imageAdd" placeholder="Image URL">
+                <input type="number" class="priceAdd" placeholder="Price">
+                <input type="text" class="descriptionAdd" placeholder="Description">
+                <button type="button" class="btnAdd">Add Product</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal editModal">
+        <div class="modal-content">
+            <span class="close closeEditModal">×</span>
+            <h2>Edit Product</h2>
+            <form class="editProductForm">
+                <input type="hidden" class="editId">
+                <input type="text" class="titleEdit" placeholder="Product Name">
+                <input type="text" class="imageEdit" placeholder="Image URL">
+                <input type="number" class="priceEdit" placeholder="Price">
+                <input type="text" class="descriptionEdit" placeholder="Description">
+                <button type="button" class="btnEditSave">Update Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
